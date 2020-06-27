@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://use.fontawesome.com/d571162109.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./style/styles.css">
+    <title>Sign Up!</title>
+</head>
+<body>
+    <div id="signup-page">
+        <main>
+    <header>
+        <nav>
+            <span>SignInTest</span>
+            <button id="hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul id="nav-ul">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="/thx.html">Reviews</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a id="get-started" href="#">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="text-content">
+    <h1>This is just a sign in test!</h1>
+    <p>Hi! Thanks for comming! I'm <strong>Kadu</strong>, and I'm studying web development. I've created this landing page using <strong>HTML5, CSS3 and JavaScript!</strong></p>
+    <button onclick="location.href='http://github.com/kdumagalhaes'"><i class="fa fa-github" aria-hidden="true"></i> My GitHub</button>
+        </div>
+    <form id="signUpForm">
+        <h2>Sign in for free!</h2>
+        <label for="email">email</label>
+        <input type="email" name="email" id="inputEmail" placeholder="Email is hi@kadumagalhaes.me">
+        <label for="password">Password</label>
+        <input type="password" name="email" id="inputPassword" placeholder="Password is 'testing123'">
+        <label for="type">choose a type</label>
+        <button>Sign In</button>
+        <p><i class="fa fa-lock" aria-hidden="true"></i>
+            The authentication is provided by <strong>Google Firebase</strong>.</p>
+    </form>
+    </section>
+        </main> 
+    </div>
+    <footer>Created by <a href="http://kadumagalhaes.me" target="_blank">Kadu Magalhães</a></footer>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

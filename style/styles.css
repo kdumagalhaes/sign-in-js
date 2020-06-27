@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap');
+
+:root {
+    --button-blue: #2081FF;
+    --button-blue-hover: #144c96;
+    --light-button-blue: #509cff;
+    --button-purple: #6e5494;
+    --button-purple-hover: #3c2b57;
+    --light-gray: #F2F2F2;
+    --lighter-gray: #F1F4FA;
+    --bg-blue: #2BC1DD;
+    --bg-purple: #6461EE;
+    --gray: #4C515C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    outline: none;
+}
+
+body {
+    background-image: linear-gradient(90deg, var(--bg-purple) 0%, var(--bg-blue) 100%);
+    color: var(--lighter-gray);
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.6s;
+}
+
+label {
+    display: none;
+}
+
+#signup-page {
+    margin: 0 30px;
+}
+
+#signup-page main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 0;
+}
+
+#signup-page main section {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#signup-page main section #text-content {
+    width: 100%;
+    max-width: 400px;
+}
+
+#signup-page main section #text-content h1 {
+    font-weight: 300;
+    font-size: 3.4rem;
+    margin-bottom: 15px;
+}
+
+#signup-page main section #text-content p {
+    line-height: 32px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+#signup-page main section #text-content button {
+    width: 100%;
+    max-width: 220px;
+    padding: 20px;
+    background-color: var(--button-purple);
+    color: var(--lighter-gray);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    transition: all 0.6s;
+}
+
+#signup-page main section #text-content button i {
+    margin-right: 10px;
+}
+
+#signup-page main section #text-content button:hover {
+    background-color: var(--button-purple-hover);
+}
+
+#signup-page main section form {
+    background-color: #fff;
+    height: 370px;
+    width: 500px;
+    padding: 0 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 50px var(--bg-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+#signup-page main section form h2 {
+    color: var(--gray);
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+
+#signup-page main section form input, select, option {
+    margin-bottom: 20px;
+    background-color: var(--light-gray);
+    height: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--gray);
+    font-weight: bold;
+    border: none;
+}
+
+#signup-page main section form button {
+    height: 60px;
+    background-color: var(--button-blue);
+    color: var(--light-gray);
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 15px var(--light-button-blue);
+    font-weight: 300;
+}
+
+#signup-page main section form button:hover {
+    background-color: var(--button-blue-hover);
+}
+
+#signup-page main section form p {
+    text-align: center;
+    color: var(--light-button-blue);
+    margin-bottom: 30px;
+    font-size: 0.7rem;
+}
+
+#signup-page main section form p i {
+    margin-right: 5px;
+}
+
+#signup-page main header span {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#signup-page main header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-ul li {
+    margin-right: 30px;
+    font-weight: 300;
+}
+
+#nav-ul li:last-child {
+    margin-right: 0;
+}
+
+#get-started {
+    border: 1px solid var(--lighter-gray);
+    border-radius: 5px;
+    padding: 10px 25px 10px;
+    transition: all 0.6s;
+}
+
+#nav-ul li #get-started:hover {
+    background-color: var(--bg-blue);
+    border-bottom: 1px solid var(--lighter-gray);
+}
+
+#nav-ul li a {
+    text-decoration: none;
+    color: var(--lighter-gray);
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+#nav-ul li a:hover {
+    border-bottom: 2px solid var(--lighter-gray);
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+footer a, #thx a {
+    font-weight: bold;
+    color: var(--button-blue-hover);
+    transition: 0.6s;
+}
+
+footer a:hover {
+    color: var(--light-gray);
+}
+
+#hamburger {
+   background-color: transparent;
+   padding: 10px 20px;
+   border: 1px solid var(--light-gray); 
+   border-radius: 5px;
+   font-size: 2rem;
+   color: var(--light-gray);
+   display: none;
+}
+
+#thanks-page {
+    width: 100%;
+    height: 100vh;
+}
+
+#thx {
+    width: 299px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#thx img {
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px var(--button-blue-hover);
+}
+
+#thx h1 {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#thx h1 i {
+    margin-right: 5px;
+}
+
+#thx button {
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--light-gray);
+    background-color: var(--button-blue);
+    box-shadow: 1px 1px 15px var(--light-button-blue);
+}
+
+#thx #logoutBtn {
+    background-color: rgb(173, 26, 0);
+}
+
+#thx #logoutBtn:hover {
+    background-color: rgb(97, 16, 1);
+}
+
+#thx button:hover {
+    background-color: var(--button-blue-hover);
+}
+
+#thx img, h1, button {
+    margin-bottom: 30px;
+}
+
+#thx h1 a:hover {
+    color: var(--light-gray);
+}
+
+@media (max-width: 1000px) {
+    #nav-ul {
+        display: none;
+        width: 100%;
+    }
+
+    #nav-ul.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    #nav-ul li {
+        margin: 0 0 30px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid var(--lighter-gray);
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+    
+    #nav-ul li:last-child {
+        border-bottom: none;
+    }
+
+    #nav-ul li a {
+        font-size: 1.7rem;
+        width: 100%;
+        display: inline-block;
+    }
+
+    #nav-ul li a:hover{
+        border-bottom: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    #signup-page main section {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin: 40px 0 40px;
+    }
+
+    #signup-page main section #text-content {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    #signup-page main section form {
+        width: 100%;
+    }
+    
+    #signup-page main section form h2 {
+        font-size: 2rem;
+    }
+
+}
